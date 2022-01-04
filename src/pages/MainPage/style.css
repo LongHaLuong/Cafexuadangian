@@ -15,6 +15,28 @@
   margin: 16px 0 16px 24px;
 }
 
-.home {
-  background-color: green;
+.ant-layout-header {
+  padding: 0 !important;
+}
+
+img{
+  border-radius: 4px;
+  max-width: 600px;
+  max-height: 450px;
+  margin-top: 2em;
+  width: 100%;
+  height: auto;
+}
+h5.ant-typography, .ant-typography h5 {
+  color:#CA965C !important
+}
+.ant-typography {
+  color: #EEC373 !important;
+}
+#components-grid-demo-playground [class~='ant-col'] > div {
+  height: 120px;
+  font-size: 14px;
+  line-height: 120px;
+  background: #CA965C;
+  border-radius: 4px;
 }

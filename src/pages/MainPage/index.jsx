@@ -1,9 +1,18 @@
 import { Layout, Avatar, Row, Col } from "antd";
 import "./style.css";
+import { Avatar, Menu } from "antd";
 import { HomeTwoTone, AntDesignOutlined } from "@ant-design/icons";
+import { Carousel } from "antd";
+import Story from "./components/Story"
 
 const { Header, Content, Footer } = Layout;
-
+const contentStyle = {
+  height: "160px",
+  color: "#fff",
+  lineHeight: "160px",
+  textAlign: "center",
+  background: "#CA965C",
+};
 const HomePage = () => {
   return (
     <>
@@ -43,7 +52,25 @@ const HomePage = () => {
             </Col>
           </Row>
         </Header>
-        <Content style={{ padding: "0 50px" }}></Content>
+        <Content>
+          <Carousel autoplay>
+            <div>
+              <h3 style={contentStyle}>1</h3>
+            </div>
+            <div>
+              <h3 style={contentStyle}>2</h3>
+            </div>
+            <div>
+              <h3 style={contentStyle}>3</h3>
+            </div>
+            <div>
+              <h3 style={contentStyle}>4</h3>
+            </div>
+          </Carousel>
+
+          <Story></Story>
+
+        </Content>
         <Footer></Footer>
       </Layout>
     </>
