@@ -1,32 +1,65 @@
 import { Layout } from "antd";
 import "./style.css";
-import { Avatar } from "antd";
+import { Avatar, Menu } from "antd";
 import { HomeTwoTone, AntDesignOutlined } from "@ant-design/icons";
+import { Carousel } from "antd";
+import Story from "./components/Story"
 
 const { Header, Content, Footer } = Layout;
-
+const contentStyle = {
+  height: "160px",
+  color: "#fff",
+  lineHeight: "160px",
+  textAlign: "center",
+  background: "#CA965C",
+};
 const HomePage = () => {
   return (
     <>
       <Layout className="layout">
         <Header style={{ backgroundColor: "white" }}>
-          <div className="home">
-            <Avatar shape="square" icon={<HomeTwoTone />} />
-          </div>
-          <div className="story">Câu chuyện cà phê xưa</div>
-          <div className="traditional">Cà phê xưa dân gian</div>
-          <div className="logo">
-            <Avatar
-              size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
-              icon={<AntDesignOutlined />}
-            />
-          </div>
-          <div className="garden">Khu vườn cà phê</div>
-          <div className="knowledge">Kiến thức cà phê</div>
-          <div className="system">Hệ thống</div>
-          <div className="contact">Liên hệ</div>
+          <Menu
+            className="menu"
+            mode="horizontal"
+            style={{ backgroundColor: "#876445", color: "#EEC373" }}
+          >
+            <Menu.Item className="home">
+              <Avatar shape="square" size="large" icon={<HomeTwoTone />} />
+            </Menu.Item>
+            <Menu.Item className="story">CÂU CHUYỆN CÀ PHÊ XƯA</Menu.Item>
+            <Menu.Item className="product">CÀ PHÊ XƯA DÂN GIAN</Menu.Item>
+            <Menu.Item className="logo">
+              <Avatar
+                size="large"
+                style={{ backgroundColor: "#F4DFBA" }}
+                src="/avatar.png"
+              />
+            </Menu.Item>
+            <Menu.Item className="garden">KHU VƯỜN CÀ PHÊ</Menu.Item>
+            <Menu.Item className="knowledge">KIẾN THỨC CÀ PHÊ</Menu.Item>
+            <Menu.Item className="system">HỆ THỐNG</Menu.Item>
+            <Menu.Item className="contact">LIÊN HỆ</Menu.Item>
+          </Menu>
         </Header>
-        <Content style={{ padding: "0 50px" }}></Content>
+        <Content>
+          <Carousel autoplay>
+            <div>
+              <h3 style={contentStyle}>1</h3>
+            </div>
+            <div>
+              <h3 style={contentStyle}>2</h3>
+            </div>
+            <div>
+              <h3 style={contentStyle}>3</h3>
+            </div>
+            <div>
+              <h3 style={contentStyle}>4</h3>
+            </div>
+          </Carousel>
+
+          <Story></Story>
+
+        </Content>
         <Footer></Footer>
       </Layout>
     </>
