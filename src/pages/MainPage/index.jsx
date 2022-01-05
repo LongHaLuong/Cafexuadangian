@@ -3,6 +3,7 @@ import "./style.css";
 import { HomeTwoTone, AntDesignOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
 import Story from "./components/Story"
+import Traditional from "./components/Traditional";
 
 const { Header, Content, Footer } = Layout;
 const contentStyle = {
@@ -68,6 +69,7 @@ const HomePage = () => {
           </Carousel>
 
           <Story></Story>
+          <Traditional></Traditional>
 
         </Content>
         <Footer></Footer>
