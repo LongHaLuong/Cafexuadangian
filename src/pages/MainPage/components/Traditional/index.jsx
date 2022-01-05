@@ -73,31 +73,34 @@ const Traditional = () => {
         </Col>
         <Col span={16} style={{ padding: "30px" }}>
           <Title level={5}>Cà phê xưa dân gian</Title>
-          {data &&
-            data.length > 0 &&
-            data.slice(minValue, maxValue).map((val) => (
-              <List itemLayout="horizontal">
-                <List.Item >
+          {data && data.length > 0 && (
+            <List
+              grid={{ gutter: 16, column: 4 }}
+              dataSource={data}
+              renderItem={(item) => (
+                <List.Item>
                   <Card
                     className="productCard"
                     hoverable
                     style={{ width: 240 }}
-                    cover={<img className="productImg" src={val.src} />}
+                    cover={<img className="productImg" src={item.src} />}
                   >
                     <Meta
-                      title={val.name}
-                      description={"Giá sản phẩm: " + val.price}
+                      title={item.name}
+                      description={"Giá sản phẩm: " + item.price}
                     />
                   </Card>
                 </List.Item>
-              </List>
-            ))}
-          <Pagination
-            defaultCurrent={1}
-            defaultPageSize={numEachPage} //default size of page
-            onChange={handleChange}
-            total={data.length} //total number of card data available
-          />
+              )}
+              pagination={{
+                defaultCurrent: 1,
+                defaultPageSize: numEachPage, //default size of page
+                onChange: handleChange,
+                total: data.length,
+              }}
+            ></List>
+          )}
+
         </Col>
       </Row>
     </>
