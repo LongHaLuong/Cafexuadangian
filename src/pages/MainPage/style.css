@@ -44,3 +44,7 @@ h5.ant-typography, .ant-typography h5 {
 .productImg{
   margin: auto
 }
+.productCard{
+  width: 50%;
+  margin: 0 auto;
+}
