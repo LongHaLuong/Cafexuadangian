@@ -1,6 +1,5 @@
-import { Layout, Avatar, Row, Col } from "antd";
+import { Layout, Avatar, Row, Col, Menu } from "antd";
 import "./style.css";
-import { Avatar, Menu } from "antd";
 import { HomeTwoTone, AntDesignOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
 import Story from "./components/Story"
