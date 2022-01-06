@@ -4,7 +4,7 @@ import { HomeTwoTone, AntDesignOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
 import Story from "./components/Story"
 import Traditional from "./components/Traditional";
-
+import Garden from "./components/Garden";
 const { Header, Content, Footer } = Layout;
 const contentStyle = {
   height: "160px",
@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <>
       <Layout className="layout">
-        <Header style={{ backgroundColor: "white" }}>
+        <Header >
           <Row>
             <Col span="1">
               <div className="home">
@@ -25,30 +25,30 @@ const HomePage = () => {
               </div>
             </Col>
             <Col span="3">
-              <div className="story">Câu chuyện cà phê xưa</div>
+              <div className="story"> CÂU CHUYỆN CÀ PHÊ XƯA</div>
             </Col>
             <Col span="3">
-              <div className="traditional">Cà phê xưa dân gian</div>
+              <div className="traditional">CÀ PHÊ XƯA DÂN GIAN</div>
             </Col>
             <Col span="3">
-              <div className="garden">Khu vườn cà phê</div>
+              <div className="garden">KHU CƯỜN CÀ PHÊ</div>
             </Col>
             <Col span="5">
-              <div className="logo">
-                <Avatar
+              <div >
+                <Avatar className="logo"
                   size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
-                  icon={<AntDesignOutlined />}
+                  src="/avatar.png"
                 />
               </div>
             </Col>
             <Col span="3">
-              <div className="knowledge">Kiến thức cà phê</div>
+              <div className="knowledge">KIẾN THỨC CÀ PHÊ</div>
             </Col>
             <Col span="3">
-              <div className="system">Hệ thống</div>
+              <div className="system">HỆ THỐNG</div>
             </Col>
             <Col span="3">
-              <div className="contact">Liên hệ</div>
+              <div className="contact">LIÊN HỆ</div>
             </Col>
           </Row>
         </Header>
@@ -70,6 +70,7 @@ const HomePage = () => {
 
           <Story></Story>
           <Traditional></Traditional>
+          <Garden></Garden>
 
         </Content>
         <Footer></Footer>

@@ -16,7 +16,8 @@
 }
 
 .ant-layout-header {
-  padding: 0 !important;
+  background-color: #876445 !important;
+  color: #CA965C !important;
 }
 
 img{
@@ -24,9 +25,16 @@ img{
   max-width: 600px;
   max-height: 450px;
   margin: 30px;
+  margin-left: 2em;
   width: 100%;
   height: auto;
 }
+
+.logo{
+  border:2px;
+  border-radius: 50%;
+}
+
 h5.ant-typography, .ant-typography h5 {
   color:#CA965C !important
 }
@@ -47,4 +55,8 @@ h5.ant-typography, .ant-typography h5 {
 .productCard{
   width: 50%;
   margin: 0 auto;
+}
+
+.garden{
+  padding-left: 3em;
 }
