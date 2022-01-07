@@ -1,9 +1,7 @@
-import { Row, Col } from "antd";
-import { Typography } from "antd";
+import { Row, Col, Typography, Card, List } from "antd";
 import { useState } from "react";
-import { Card, Pagination, List } from "antd";
 
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 const { Meta } = Card;
 
 let data = [

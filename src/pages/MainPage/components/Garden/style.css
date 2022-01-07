@@ -1,0 +1,8 @@
+.list-garden .ant-list-pagination {
+  text-align: center !important;
+}
+
+.list-garden {
+  display: block !important;
+  margin: auto auto !important;
+}

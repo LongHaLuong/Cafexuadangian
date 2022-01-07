@@ -1,5 +1,5 @@
-import { Row, Col } from 'antd';
-import { Typography } from 'antd';
+import { Row, Col, Typography } from 'antd';
+import './style.css';
 
 const { Title, Paragraph } = Typography;
 
@@ -12,7 +12,7 @@ const Story = () => {
           <Paragraph>Nội dung trích dẫn: </Paragraph>
         </Col>
         <Col span={8}>
-          <img src="/nongdan.jpg"></img>
+          <img className="img" src="/nongdan.jpg"></img>
         </Col>
       </Row>
     </>

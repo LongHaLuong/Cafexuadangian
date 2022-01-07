@@ -1,13 +1,15 @@
-import { Layout, Avatar, Row, Col, Menu } from "antd";
+import { Layout, Image, Avatar, Row, Col } from "antd";
 import "./style.css";
 import { HomeTwoTone, AntDesignOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
-import Story from "./components/Story"
+import Story from "./components/Story";
 import Traditional from "./components/Traditional";
 import Garden from "./components/Garden";
+import Duty from "./components/Duty";
+import Reviews from "./components/Reviews";
 const { Header, Content, Footer } = Layout;
 const contentStyle = {
-  height: "160px",
+  height: "400px",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",
@@ -17,29 +19,24 @@ const HomePage = () => {
   return (
     <>
       <Layout className="layout">
-        <Header >
-          <Row>
-            <Col span="1">
-              <div className="home">
-                <Avatar shape="square" icon={<HomeTwoTone />} />
-              </div>
-            </Col>
-            <Col span="3">
+        <Header style={{ height: "80px"}}>
+          <Row style={{ textAlign: "center", fontSize: 20}}>
+            <Col span="4">
               <div className="story"> CÂU CHUYỆN CÀ PHÊ XƯA</div>
             </Col>
             <Col span="3">
               <div className="traditional">CÀ PHÊ XƯA DÂN GIAN</div>
             </Col>
             <Col span="3">
-              <div className="garden">KHU CƯỜN CÀ PHÊ</div>
+              <div className="garden">KHU VƯỜN CÀ PHÊ</div>
             </Col>
-            <Col span="5">
-              <div >
-                <Avatar className="logo"
-                  size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
-                  src="/avatar.png"
-                />
-              </div>
+            <Col span="4">
+              <Image
+                width={75}
+                preview={false}
+                className="logo"
+                src="/avatar.png"
+              />
             </Col>
             <Col span="3">
               <div className="knowledge">KIẾN THỨC CÀ PHÊ</div>
@@ -53,7 +50,7 @@ const HomePage = () => {
           </Row>
         </Header>
         <Content>
-          <Carousel autoplay>
+          <Carousel autoplay >
             <div>
               <h3 style={contentStyle}>1</h3>
             </div>
@@ -68,10 +65,11 @@ const HomePage = () => {
             </div>
           </Carousel>
 
-          <Story></Story>
-          <Traditional></Traditional>
-          <Garden></Garden>
-
+          <Story/>
+          <Traditional/>
+          <Garden/>
+          <Duty />
+          <Reviews />
         </Content>
         <Footer></Footer>
       </Layout>

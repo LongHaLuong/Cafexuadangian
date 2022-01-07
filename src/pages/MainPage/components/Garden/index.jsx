@@ -1,7 +1,6 @@
-import { Row, Col } from "antd";
-import { Typography, Input } from "antd";
-import { Card, Pagination, List } from "antd";
+import { Row, Col, Card, Typography, Input, List } from "antd";
 import { useState } from "react";
+import "./style.css";
 
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
@@ -72,47 +71,47 @@ const Garden = () => {
   return (
     <>
       <Row className="garden">
-        <Col span={16}>
+        <Col span={8}></Col>
+        <Col span={8}>
           <Search
             placeholder="Tìm sản phẩm"
             onSearch={onSearch}
-            style={{ width: 200 }}
+            style={{ width: 500}}
           />
         </Col>
-        <Col span={8}>
+        <Col span={8} >
           <Title level={5}>Khu vườn cà phê</Title>
         </Col>
       </Row>
       <Row className="gardenProduct">
-        <Col span={24} style={{ padding: "30px" }}>
-          {data && data.length > 0 && (
-            <List
-              grid={{ gutter: 16, column: { numEachPage } }}
-              dataSource={data}
-              renderItem={(item) => (
-                <List.Item>
-                  <Card
-                    className="productCard"
-                    hoverable
-                    style={{ width: 240 }}
-                    cover={<img className="productImg" src={item.src} />}
-                  >
-                    <Meta
-                      title={item.name}
-                      description={"Giá sản phẩm: " + item.price}
-                    />
-                  </Card>
-                </List.Item>
-              )}
-              pagination={{
-                defaultCurrent: 1,
-                defaultPageSize: numEachPage, //default size of page
-                onChange: handleChange,
-                total: data.length,
-              }}
-            ></List>
-          )}
-        </Col>
+        {data && data.length > 0 && (
+          <List
+            className="list-garden"
+            grid={{ gutter: 16, column: { numEachPage } }}
+            dataSource={data}
+            renderItem={(item) => (
+              <List.Item>
+                <Card
+                  className="productCard"
+                  hoverable
+                  style={{ width: 240 }}
+                  cover={<img className="productImg" src={item.src} />}
+                >
+                  <Meta
+                    title={item.name}
+                    description={"Giá sản phẩm: " + item.price}
+                  />
+                </Card>
+              </List.Item>
+            )}
+            pagination={{
+              defaultCurrent: 1,
+              defaultPageSize: numEachPage, //default size of page
+              onChange: handleChange,
+              total: data.length,
+            }}
+          ></List>
+        )}
       </Row>
     </>
   );

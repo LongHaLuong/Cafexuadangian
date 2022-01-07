@@ -1,0 +1,9 @@
+.img{
+  border-radius: 4px;
+  max-width: 600px;
+  max-height: 450px;
+  margin: 30px;
+  margin-left: 2em;
+  width: 100%;
+  height: auto;
+}
