@@ -7,6 +7,8 @@ import Traditional from "./components/Traditional";
 import Garden from "./components/Garden";
 import Duty from "./components/Duty";
 import Reviews from "./components/Reviews";
+import Contact from "./components/Contact";
+
 const { Header, Content, Footer } = Layout;
 const contentStyle = {
   height: "400px",
@@ -70,8 +72,11 @@ const HomePage = () => {
           <Garden/>
           <Duty />
           <Reviews />
+          
         </Content>
-        <Footer></Footer>
+        <Footer>
+          <Contact />
+        </Footer>
       </Layout>
     </>
   );
