@@ -10,7 +10,7 @@ const { Title, Paragraph } = Typography;
 const Contact = () => {
   return (
     <>
-      <Divider orientation="left" className="contactHeader">
+      <Divider orientation="left" className="contactHeader" id="contact">
         LIÊN HỆ VỚI CHÚNG TÔI
       </Divider>
       <Row>

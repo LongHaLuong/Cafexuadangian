@@ -10,7 +10,7 @@ const data =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 const Reviews = () => {
   return (
     <>
-      <Row className="tradition">
+      <Row id="reviews">
         <Col span={8} style={{ padding: "30px" }}></Col>
         <Col span={8} style={{ padding: "30px" }}></Col>
         <Col span={8} style={{ padding: "30px" }}>

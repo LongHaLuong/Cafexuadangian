@@ -7,7 +7,7 @@ const { Meta } = Card;
 const Duty = () => {
   return (
     <>
-      <Row className="tradition">
+      <Row id="duty">
         <Col span={8} style={{ padding: "30px" }}>
         </Col>
         <Col span={8} style={{ padding: "30px" }}>

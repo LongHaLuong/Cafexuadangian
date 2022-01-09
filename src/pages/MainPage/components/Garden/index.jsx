@@ -70,7 +70,7 @@ const Garden = () => {
   };
   return (
     <>
-      <Row className="garden">
+      <Row id="garden">
         <Col span={8}></Col>
         <Col span={8}>
           <Search

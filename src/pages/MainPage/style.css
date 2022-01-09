@@ -24,6 +24,14 @@
   color: #CA965C !important;
 }
 
+a {
+  color: #CA965C !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .logo{
   border :2px;
   border-radius: 50%;

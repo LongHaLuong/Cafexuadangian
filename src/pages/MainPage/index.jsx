@@ -8,6 +8,9 @@ import Garden from "./components/Garden";
 import Duty from "./components/Duty";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
+import { Anchor } from "antd";
+
+const { Link } = Anchor;
 
 const { Header, Content, Footer } = Layout;
 const contentStyle = {
@@ -17,20 +20,21 @@ const contentStyle = {
   textAlign: "center",
   background: "#CA965C",
 };
+
 const HomePage = () => {
   return (
     <>
       <Layout className="layout">
         <Header style={{ height: "80px"}}>
-          <Row style={{ textAlign: "center", fontSize: 20}}>
+          <Row style={{ textAlign: "center", fontSize: 20 }}>
             <Col span="4">
-              <div className="story"> CÂU CHUYỆN CÀ PHÊ XƯA</div>
+              <a className="story" href="#story"> CÂU CHUYỆN CÀ PHÊ XƯA</a>
             </Col>
             <Col span="3">
-              <div className="traditional">CÀ PHÊ XƯA DÂN GIAN</div>
+              <a className="traditional" href="#traditional">CÀ PHÊ XƯA DÂN GIAN</a>
             </Col>
             <Col span="3">
-              <div className="garden">KHU VƯỜN CÀ PHÊ</div>
+              <a className="garden" href="#garden">KHU VƯỜN CÀ PHÊ</a>
             </Col>
             <Col span="4">
               <Image
@@ -41,18 +45,18 @@ const HomePage = () => {
               />
             </Col>
             <Col span="3">
-              <div className="knowledge">KIẾN THỨC CÀ PHÊ</div>
+              <a className="knowledge" href="#knowledge">KIẾN THỨC CÀ PHÊ</a>
             </Col>
             <Col span="3">
-              <div className="system">HỆ THỐNG</div>
+              <a className="system" href="#system">HỆ THỐNG</a>
             </Col>
             <Col span="3">
-              <div className="contact">LIÊN HỆ</div>
+              <a className="contact" href="#contact">LIÊN HỆ</a>
             </Col>
           </Row>
         </Header>
         <Content>
-          <Carousel autoplay >
+          <Carousel autoplay>
             <div>
               <h3 style={contentStyle}>1</h3>
             </div>
@@ -67,15 +71,15 @@ const HomePage = () => {
             </div>
           </Carousel>
 
-          <Story/>
-          <Traditional/>
-          <Garden/>
-          <Duty />
-          <Reviews />
+          <Story id="story" />
+          <Traditional id="traditional" />
+          <Garden id="garden" />
+          <Duty id="duty" />
+          <Reviews id="reviews" />
           
         </Content>
         <Footer>
-          <Contact />
+          <Contact id="contact" />
         </Footer>
       </Layout>
     </>

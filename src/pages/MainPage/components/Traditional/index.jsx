@@ -65,7 +65,7 @@ const Traditional = () => {
 
   return (
     <>
-      <Row className="tradition">
+      <Row id="traditional">
         <Col span={8}>
           <img src="/phincafe.jpeg"></img>
         </Col>
