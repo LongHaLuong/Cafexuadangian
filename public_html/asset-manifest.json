@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cafexuadangian.com/Cafexuadangian/static/css/main.6e66283f.css",
+    "main.js": "/cafexuadangian.com/Cafexuadangian/static/js/main.857fa140.js",
+    "static/js/787.bf6d25c6.chunk.js": "/cafexuadangian.com/Cafexuadangian/static/js/787.bf6d25c6.chunk.js",
+    "index.html": "/cafexuadangian.com/Cafexuadangian/index.html",
+    "main.6e66283f.css.map": "/cafexuadangian.com/Cafexuadangian/static/css/main.6e66283f.css.map",
+    "main.857fa140.js.map": "/cafexuadangian.com/Cafexuadangian/static/js/main.857fa140.js.map",
+    "787.bf6d25c6.chunk.js.map": "/cafexuadangian.com/Cafexuadangian/static/js/787.bf6d25c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e66283f.css",
+    "static/js/main.857fa140.js"
+  ]
+}

@@ -8,12 +8,12 @@ const Duty = () => {
   return (
     <>
       <Row id="duty">
+        <Col span={8} style={{ padding: "30px" }}></Col>
+        <Col span={8} style={{ padding: "30px" }}></Col>
         <Col span={8} style={{ padding: "30px" }}>
-        </Col>
-        <Col span={8} style={{ padding: "30px" }}>
-        </Col>
-        <Col span={8} style={{ padding: "30px" }}>
-          <Title level={5}>Sứ mệnh cà phê xưa</Title>
+          <div className="title_box_right">
+            <Title level={5}>Sứ mệnh cà phê xưa</Title>
+          </div>
         </Col>
       </Row>
       <div className="site-card-wrapper">

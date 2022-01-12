@@ -1,23 +1,24 @@
 import { Row, Col, Card, Typography, Avatar, List } from "antd";
-import { useState } from "react";
 
 const { Title } = Typography;
 const { Meta } = Card;
 
 const numEachPage = 5;
-const data =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
 const Reviews = () => {
   return (
     <>
       <Row id="reviews">
-        <Col span={8} style={{ padding: "30px" }}></Col>
-        <Col span={8} style={{ padding: "30px" }}></Col>
-        <Col span={8} style={{ padding: "30px" }}>
-          <Title level={5}>Hoài vĩ cà phê xưa</Title>
+        <Col span={8} style={{ padding: "30px", paddingBottom: "5px" }}></Col>
+        <Col span={8} style={{ padding: "30px", paddingBottom: "5px" }}></Col>
+        <Col span={8} style={{ padding: "30px", paddingBottom: "5px" }}>
+          <div className="title_box_right">
+            <Title level={5}>Hoài vĩ cà phê xưa</Title>
+          </div>
         </Col>
       </Row>
-      <div className="site-card-wrapper">
+      <div className="site-card-wrapper" style={{paddingBottom:"1%"}}>
         <Row gutter={16}>
           <List
             className="list-garden"

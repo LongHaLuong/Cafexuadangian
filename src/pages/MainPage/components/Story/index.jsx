@@ -1,5 +1,5 @@
-import { Row, Col, Typography } from 'antd';
-import './style.css';
+import { Row, Col, Typography } from "antd";
+import "./style.css";
 
 const { Title, Paragraph } = Typography;
 
@@ -8,7 +8,11 @@ const Story = () => {
     <>
       <Row id="story">
         <Col span={16} style={{ padding: "30px" }}>
-          <Title level={5}>Câu chuyện cà phê xưa dân gian</Title>
+          <div className="title_box_left">
+            <Title level={5}>
+              Câu chuyện cà phê xưa dân gian
+            </Title>
+          </div>
           <Paragraph>Nội dung trích dẫn: </Paragraph>
         </Col>
         <Col span={8}>

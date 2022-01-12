@@ -69,8 +69,10 @@ const Traditional = () => {
         <Col span={8}>
           <img src="/phincafe.jpeg"></img>
         </Col>
-        <Col span={16} style={{ padding: "30px" }}>
-          <Title level={5}>Cà phê xưa dân gian</Title>
+        <Col span={16} style={{ padding: "15px" }}>
+          <div className="title_box_left" style={{marginBottom:"10px"}}>
+            <Title level={5}>Cà phê xưa dân gian</Title>
+          </div>
           {data && data.length > 0 && (
             <List
               grid={{ gutter: 16, column: 4 }}
@@ -98,7 +100,6 @@ const Traditional = () => {
               }}
             ></List>
           )}
-
         </Col>
       </Row>
     </>

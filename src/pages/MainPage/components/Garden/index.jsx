@@ -70,17 +70,19 @@ const Garden = () => {
   };
   return (
     <>
-      <Row id="garden">
-        <Col span={8}></Col>
-        <Col span={8}>
+      <Row>
+        <Col span={8} style={{ padding: "30px" }}></Col>
+        <Col span={8} style={{ padding: "30px" }}>
           <Search
             placeholder="Tìm sản phẩm"
             onSearch={onSearch}
-            style={{ width: 500}}
+            style={{ width: 480 }}
           />
         </Col>
-        <Col span={8} >
-          <Title level={5}>Khu vườn cà phê</Title>
+        <Col span={8} style={{ padding: "30px" }}>
+          <div className="title_box_right">
+            <Title level={5}>Khu vườn cà phê</Title>
+          </div>
         </Col>
       </Row>
       <Row className="gardenProduct">
