@@ -17,19 +17,19 @@ const Duty = () => {
         </Col>
       </Row>
       <div className="site-card-wrapper">
-        <Row gutter={16}>
+        <Row >
           <Col span={8}>
-            <Card title="Card title" bordered={false}>
+            <Card title="Sứ mệnh 1" bordered={false}>
               Card content
             </Card>
           </Col>
           <Col span={8}>
-            <Card title="Card title" bordered={false}>
+            <Card title="Sứ mệnh 2" bordered={false}>
               Card content
             </Card>
           </Col>
           <Col span={8}>
-            <Card title="Card title" bordered={false}>
+            <Card title="Sứ mệnh 3" bordered={false}>
               Card content
             </Card>
           </Col>

@@ -19,7 +19,7 @@ const Reviews = () => {
         </Col>
       </Row>
       <div className="site-card-wrapper" style={{paddingBottom:"1%"}}>
-        <Row gutter={16}>
+        <Row >
           <List
             className="list-garden"
             grid={{ gutter: 16, column: { numEachPage } }}

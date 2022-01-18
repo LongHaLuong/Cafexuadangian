@@ -1,5 +1,7 @@
 import { Row, Col, Typography, Card, List } from "antd";
 import { useState } from "react";
+import phincafe from '../../../../assets/phincafe.jpeg'
+import product from "../../../../assets/product.jpg";
 
 const { Title } = Typography;
 const { Meta } = Card;
@@ -8,47 +10,47 @@ let data = [
   {
     name: "Sản phẩm 1",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 2",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 3",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 4",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 5",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 6",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 7",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 8",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 9",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
 ];
 
@@ -65,12 +67,12 @@ const Traditional = () => {
 
   return (
     <>
-      <Row id="traditional" gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}>
+      <Row id="traditional">
         <Col span={8}>
-          <img style={{width:"100%", height:"90%"}} src="/phincafe.jpeg"></img>
+          <img style={{ width: "100%", height: "90%" }} src={phincafe}></img>
         </Col>
         <Col span={16} style={{ padding: "15px" }}>
-          <div className="title_box_left" style={{marginBottom:"10px"}}>
+          <div className="title_box_left" style={{ marginBottom: "10px" }}>
             <Title level={5}>Cà phê xưa dân gian</Title>
           </div>
           {data && data.length > 0 && (

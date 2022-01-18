@@ -1,6 +1,8 @@
 import { Row, Col, Card, Typography, Input, List } from "antd";
 import { useState } from "react";
 import "./style.css";
+import product from "../../../../assets/product.jpg";
+
 
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
@@ -10,47 +12,47 @@ let data = [
   {
     name: "Sản phẩm 1",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 2",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 3",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 4",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 5",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 6",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 7",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 8",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
   {
     name: "Sản phẩm 9",
     price: "100.000VNĐ",
-    src: "/product.jpg",
+    src: product,
   },
 ];
 

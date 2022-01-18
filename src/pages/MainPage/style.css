@@ -44,7 +44,7 @@ html {
 
 h5.ant-typography,
 .ant-typography h5 {
-  color: white !important;
+  color: #260b0b !important;
 }
 
 .title_box_left,
@@ -82,6 +82,3 @@ h5.ant-typography,
   margin: 0 auto;
 }
 
-/* .garden{
-  padding-left: 3em;
-} */
