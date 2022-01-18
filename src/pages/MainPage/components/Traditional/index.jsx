@@ -65,9 +65,9 @@ const Traditional = () => {
 
   return (
     <>
-      <Row id="traditional">
+      <Row id="traditional" gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}>
         <Col span={8}>
-          <img src="/phincafe.jpeg"></img>
+          <img style={{width:"100%", height:"90%"}} src="/phincafe.jpeg"></img>
         </Col>
         <Col span={16} style={{ padding: "15px" }}>
           <div className="title_box_left" style={{marginBottom:"10px"}}>
@@ -82,7 +82,7 @@ const Traditional = () => {
                   <Card
                     className="productCard"
                     hoverable
-                    style={{ width: 240 }}
+                    style={{ width: "100%" }}
                     cover={<img className="productImg" src={item.src} />}
                   >
                     <Meta

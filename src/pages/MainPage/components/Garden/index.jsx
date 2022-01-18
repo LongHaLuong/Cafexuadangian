@@ -76,7 +76,7 @@ const Garden = () => {
           <Search
             placeholder="Tìm sản phẩm"
             onSearch={onSearch}
-            style={{ width: 480 }}
+            style={{ width: "70%" }}
           />
         </Col>
         <Col span={8} style={{ padding: "30px" }}>

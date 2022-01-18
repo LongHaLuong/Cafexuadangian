@@ -23,9 +23,7 @@
   top: 0;
   z-index: 9;
 }
-body {
-  margin-top: 50px;
-}
+
 .contactHeader {
   color: #ca965c !important;
 }
@@ -54,10 +52,10 @@ h5.ant-typography,
   border: #eec373 1px solid;
   background-color: #eec373;
   border-radius: 3px;
-  width: 22%;
 }
 .title_box_left {
   border-bottom-right-radius: 25px;
+  width: 200px;
 }
 .title_box_right {
   border-bottom-left-radius: 25px;
