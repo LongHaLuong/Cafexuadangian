@@ -9,7 +9,7 @@ import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Knowledge from "./components/Knowlegde";
 import { Anchor } from "antd";
-import avatar from '../../assets/avatar.png'
+import avatar from "../../assets/avatar.png";
 
 const { Link } = Anchor;
 
@@ -27,20 +27,19 @@ const HomePage = () => {
     <>
       <Layout className="layout">
         <Header style={{ height: "80px" }}>
-          <Row style={{ textAlign: "center", fontSize: 20 }}>
+          <Row style={{ textAlign: "center", fontSize: 20 }} className="header">
             <Col span="4">
-              <a className="story" href="#story">
-                {" "}
+              <a className="story" onClick={() => window.scrollTo(0, 0)}>
                 CÂU CHUYỆN CÀ PHÊ XƯA
               </a>
             </Col>
             <Col span="3">
-              <a className="traditional" href="#traditional">
+              <a className="traditional anchor" href="#traditional">
                 CÀ PHÊ XƯA DÂN GIAN
               </a>
             </Col>
             <Col span="3">
-              <a className="garden" href="#garden">
+              <a className="garden anchor" href="#garden">
                 KHU VƯỜN CÀ PHÊ
               </a>
             </Col>
@@ -48,17 +47,17 @@ const HomePage = () => {
               <Image width={75} preview={false} className="logo" src={avatar} />
             </Col>
             <Col span="3">
-              <a className="knowledge" href="#knowledge">
+              <a className="knowledge anchor" href="#knowledge">
                 KIẾN THỨC CÀ PHÊ
               </a>
             </Col>
             <Col span="3">
-              <a className="system" href="#system">
+              <a className="system anchor" href="#system">
                 HỆ THỐNG
               </a>
             </Col>
             <Col span="3">
-              <a className="contact" href="#contact">
+              <a className="contact anchor" href="#contact">
                 LIÊN HỆ
               </a>
             </Col>
