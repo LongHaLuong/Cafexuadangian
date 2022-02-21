@@ -83,7 +83,7 @@ const Garden = () => {
         </Col>
         <Col span={8} style={{ padding: "30px" }}>
           <div className="title_box_right">
-            <Title level={5}>Khu vườn cà phê</Title>
+            <Title level={4}>Khu vườn cà phê</Title>
           </div>
         </Col>
       </Row>

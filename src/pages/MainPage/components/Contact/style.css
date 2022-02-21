@@ -8,3 +8,9 @@
 .anticon svg {
     margin-bottom: 5px;
 }
+
+.contactContent {
+    color: white !important;
+    font-size: larger;
+    line-height: normal;
+  }

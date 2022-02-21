@@ -14,7 +14,7 @@ const Reviews = () => {
         <Col span={8} style={{ padding: "30px", paddingBottom: "5px" }}></Col>
         <Col span={8} style={{ padding: "30px", paddingBottom: "5px" }}>
           <div className="title_box_right">
-            <Title level={5}>Hoài vĩ cà phê xưa</Title>
+            <Title level={4}>Hoài vĩ cà phê xưa</Title>
           </div>
         </Col>
       </Row>

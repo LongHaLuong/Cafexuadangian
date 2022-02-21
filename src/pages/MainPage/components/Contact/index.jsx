@@ -11,20 +11,17 @@ const { Title, Paragraph } = Typography;
 const Contact = () => {
   return (
     <>
-      <Divider orientation="left" className="contactHeader" id="contact">
-        LIÊN HỆ VỚI CHÚNG TÔI
-      </Divider>
       <Row>
         <Col className="gutter-row" span={12}>
-          <Title level={5}>CÀ PHÊ XƯA DÂN GIAN</Title>
-          <Paragraph>
+          <Title level={4}>CÀ PHÊ XƯA DÂN GIAN</Title>
+          <Paragraph className="contactContent">
             Địa chỉ Homestay: 689 Lý Thái Tổ, TP Bảo Lộc, Lâm Đồng
           </Paragraph>
-          <Paragraph>
+          <Paragraph className="contactContent">
             Địa chỉ liên hệ: 143A Ung Văn Khiêm, Phường 25, Quận Bình
             Thạnh,TP.Hồ Chí Minh
           </Paragraph>
-          <Paragraph>Số điện thoại liên hệ: 0938637373 (chị Loan)</Paragraph>
+          <Paragraph className="contactContent">Số điện thoại liên hệ: 0906117705 (Anh Dũng)</Paragraph>
           <Button
             type="primary"
             icon={<FacebookFilled style={{ fontSize: 30 }} />}

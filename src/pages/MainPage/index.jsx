@@ -10,12 +10,15 @@ import Contact from "./components/Contact";
 import Knowledge from "./components/Knowlegde";
 import { Anchor } from "antd";
 import avatar from "../../assets/avatar.png";
+import slide1 from "../../assets/Carousel_1.png"
+import slide2 from "../../assets/Carousel_2.jpg"
+import slide3 from "../../assets/Carousel_3.jpg"
 
 const { Link } = Anchor;
 
 const { Header, Content, Footer } = Layout;
 const contentStyle = {
-  height: "400px",
+  height: "550px",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",
@@ -30,17 +33,17 @@ const HomePage = () => {
           <Row style={{ textAlign: "center", fontSize: 20 }} className="header">
             <Col span="4">
               <a className="story" onClick={() => window.scrollTo(0, 0)}>
-                CÂU CHUYỆN CÀ PHÊ XƯA
+                Câu chuyện Cà phê xưa
               </a>
             </Col>
             <Col span="3">
               <a className="traditional anchor" href="#traditional">
-                CÀ PHÊ XƯA DÂN GIAN
+                Cà phê xưa dân gian
               </a>
             </Col>
             <Col span="3">
               <a className="garden anchor" href="#garden">
-                KHU VƯỜN CÀ PHÊ
+                Khu vườn cà phê
               </a>
             </Col>
             <Col span="4">
@@ -48,34 +51,31 @@ const HomePage = () => {
             </Col>
             <Col span="3">
               <a className="knowledge anchor" href="#knowledge">
-                KIẾN THỨC CÀ PHÊ
+                Kiến thức cà phê
               </a>
             </Col>
             <Col span="3">
               <a className="system anchor" href="#system">
-                HỆ THỐNG
+                Hệ thống
               </a>
             </Col>
             <Col span="3">
-              <a className="contact anchor" href="#contact">
-                LIÊN HỆ
+              <a className="contact" onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
+                Liên hệ
               </a>
             </Col>
           </Row>
         </Header>
         <Content>
-          <Carousel autoplay>
+          <Carousel autoplay dotPosition="top">
             <div>
-              <h3 style={contentStyle}>1</h3>
+              <h3 style={contentStyle}><img className="carouselImg" src={slide1} fluid ></img></h3>
             </div>
             <div>
-              <h3 style={contentStyle}>2</h3>
+              <h3 style={contentStyle}><img className="carouselImg" src={slide2} fluid ></img></h3>
             </div>
             <div>
-              <h3 style={contentStyle}>3</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>4</h3>
+              <h3 style={contentStyle}><img className="carouselImg" src={slide3} fluid ></img></h3>
             </div>
           </Carousel>
 

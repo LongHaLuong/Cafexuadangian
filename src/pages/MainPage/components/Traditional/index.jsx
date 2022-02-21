@@ -2,6 +2,7 @@ import { Row, Col, Typography, Card, List } from "antd";
 import { useState } from "react";
 import phincafe from '../../../../assets/phincafe.jpeg'
 import product from "../../../../assets/product.jpg";
+import "./style.css";
 
 const { Title } = Typography;
 const { Meta } = Card;
@@ -73,7 +74,7 @@ const Traditional = () => {
         </Col>
         <Col span={16} style={{ padding: "15px" }}>
           <div className="title_box_left" style={{ marginBottom: "10px" }}>
-            <Title level={5}>Cà phê xưa dân gian</Title>
+            <Title level={4}>Cà phê xưa dân gian</Title>
           </div>
           {data && data.length > 0 && (
             <List

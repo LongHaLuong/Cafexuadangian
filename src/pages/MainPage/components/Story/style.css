@@ -11,3 +11,7 @@
 .title_box_left {
   color: #260b0b !important;
 }
+
+.ant-typography {
+  font-size: medium !important;
+}
