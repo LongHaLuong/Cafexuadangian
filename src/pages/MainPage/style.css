@@ -55,6 +55,7 @@ h4.ant-typography,
   border-radius: 3px;
   size: 10px;
   margin-bottom: 1%;
+  padding-top: 4px;
 }
 .title_box_left {
   border-bottom-right-radius: 25px;
@@ -63,7 +64,7 @@ h4.ant-typography,
 }
 .title_box_right {
   border-bottom-left-radius: 25px;
-  width: 45%;
+  width: 18em;
   padding-left: 10%;
 }
 
