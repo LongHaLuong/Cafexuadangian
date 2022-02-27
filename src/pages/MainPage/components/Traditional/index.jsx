@@ -26,11 +26,11 @@ let data = [
     price: "179.000VNĐ",
     src: binhGiuNhiet,
   },
-  {
-    name: "Rượu cổ truyền Bình Định",
-    price: "149.000VNĐ",
-    src: ruouCoTruyen,
-  },
+  // {
+  //   name: "Rượu cổ truyền Bình Định",
+  //   price: "149.000VNĐ",
+  //   src: ruouCoTruyen,
+  // },
 ];
 
 const Traditional = () => {
@@ -49,7 +49,7 @@ const Traditional = () => {
     <>
       <Row id="traditional">
         <Col span={8}>
-          <img style={{ width: "100%", height: "95%", paddingTop: "5%" }} src={phincafe}></img>
+          <img style={{ width: "100%", height: "90%" }} src={phincafe}></img>
         </Col>
         <Col span={16} style={{ padding: "15px" }}>
           <div className="title_box_left" style={{ marginBottom: "10px" }}>

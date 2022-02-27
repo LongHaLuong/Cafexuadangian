@@ -10,9 +10,10 @@ import Contact from "./components/Contact";
 import Knowledge from "./components/Knowlegde";
 import { Anchor } from "antd";
 import avatar from "../../assets/avatar.png";
-import slide1 from "../../assets/Carousel_1.png"
+import slide1 from "../../assets/Carousel_1.jpg"
 import slide2 from "../../assets/Carousel_2.jpg"
 import slide3 from "../../assets/Carousel_3.jpg"
+import slide4 from "../../assets/Carousel_4.jpg"
 
 const { Link } = Anchor;
 
@@ -77,13 +78,16 @@ const HomePage = () => {
             <div>
               <h3 style={contentStyle}><img className="carouselImg" src={slide3} fluid ></img></h3>
             </div>
+            <div>
+              <h3 style={contentStyle}><img className="carouselImg" src={slide4} fluid ></img></h3>
+            </div>
           </Carousel>
 
           <Story id="story" />
           <Traditional id="traditional" />
-          <div id="garden">
+          {/* <div id="garden">
             <Garden />
-          </div>
+          </div> */}
           <Duty id="duty" />
           <Reviews id="reviews" />
           <div id="knowledge">

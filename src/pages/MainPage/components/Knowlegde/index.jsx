@@ -80,7 +80,7 @@ const Knowledge = () => {
             <Title level={3}>Video Clip</Title>
             <ReactPlayer
               className="videoplayer"
-              url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+              url="https://www.youtube.com/watch?v=XJb5O2HMSlc"
               controls
             />
           </div>
