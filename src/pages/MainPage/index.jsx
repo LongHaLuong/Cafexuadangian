@@ -89,7 +89,7 @@ const HomePage = () => {
             <Garden />
           </div> */}
           <Duty id="duty" />
-          <Reviews id="reviews" />
+          {/* <Reviews id="reviews" /> */}
           <div id="knowledge">
             <Knowledge />
           </div>

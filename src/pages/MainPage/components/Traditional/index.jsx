@@ -49,7 +49,7 @@ const Traditional = () => {
     <>
       <Row id="traditional">
         <Col span={8}>
-          <img style={{ width: "100%", height: "90%" }} src={phincafe}></img>
+          <img style={{ width: "100%", height: "95%" }} src={phincafe}></img>
         </Col>
         <Col span={16} style={{ padding: "15px" }}>
           <div className="title_box_left" style={{ marginBottom: "10px" }}>

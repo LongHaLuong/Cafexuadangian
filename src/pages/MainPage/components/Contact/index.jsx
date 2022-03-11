@@ -5,10 +5,15 @@ import { FacebookFilled, InstagramFilled } from "@ant-design/icons";
 import { Image } from "antd";
 import "./style.css";
 import BTC from "../../../../assets/BCT.png";
+import logo from "../../../../assets/LogoCFX.png";
+import GoogleMapReact from 'google-map-react';
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const { Title, Paragraph } = Typography;
 
 const Contact = () => {
+
   return (
     <>
       <Row>
@@ -19,7 +24,7 @@ const Contact = () => {
           </Paragraph>
           <Paragraph className="contactContent">MSDN: 5801460294</Paragraph>
           <Paragraph className="contactContent">
-            Số điện thoại liên hệ: 02835121164;{" "}
+            Số điện thoại liên hệ: 02835121164{" "}
           </Paragraph>
           <Paragraph className="contactContent">
             Email: ctycaphexua@gmail.com
@@ -40,7 +45,30 @@ const Contact = () => {
           />
         </Col>
         <Col className="gutter-row" span={6}>
-          <Image src={BTC} width="50%" preview={false}></Image>
+          <Row>
+            <Image src={BTC} width="50%" preview={false}></Image>
+          </Row>
+          <Row>
+            <Image
+              src={logo}
+              width="50%"
+              preview={false}
+              style={{ background: "white", padding: "5px", marginTop:"10px" }}
+            ></Image>
+          </Row>
+        </Col>
+        <Col className="gutter-row" span={6}>
+          <Row>
+            <Image src={BTC} width="50%" preview={false}></Image>
+          </Row>
+          <Row>
+            <Image
+              src={logo}
+              width="50%"
+              preview={false}
+              style={{ background: "white", padding: "5px", marginTop:"10px" }}
+            ></Image>
+          </Row>
         </Col>
       </Row>
     </>
