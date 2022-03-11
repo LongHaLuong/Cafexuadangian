@@ -1,6 +1,5 @@
-import { Layout, Image, Avatar, Row, Col } from "antd";
+import { Layout, Image, Carousel, Row, Col } from "antd";
 import "./style.css";
-import { Carousel } from "antd";
 import Story from "./components/Story";
 import Traditional from "./components/Traditional";
 import Garden from "./components/Garden";
@@ -8,14 +7,12 @@ import Duty from "./components/Duty";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Knowledge from "./components/Knowlegde";
-import { Anchor } from "antd";
+import { Link } from "react-router-dom";
 import avatar from "../../assets/avatar.png";
-import slide1 from "../../assets/Carousel_1.jpg"
-import slide2 from "../../assets/Carousel_2.jpg"
-import slide3 from "../../assets/Carousel_3.jpg"
-import slide4 from "../../assets/Carousel_4.jpg"
-
-const { Link } = Anchor;
+import slide1 from "../../assets/Carousel_1.jpg";
+import slide2 from "../../assets/Carousel_2.jpg";
+import slide3 from "../../assets/Carousel_3.jpg";
+import slide4 from "../../assets/Carousel_4.jpg";
 
 const { Header, Content, Footer } = Layout;
 const contentStyle = {
@@ -56,12 +53,13 @@ const HomePage = () => {
               </a>
             </Col>
             <Col span="3">
-              <a className="system anchor" href="#system">
-                Hệ thống
-              </a>
+              <Link to="/system">Hệ thống</Link>
             </Col>
             <Col span="3">
-              <a className="contact" onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
+              <a
+                className="contact"
+                onClick={() => window.scrollTo(0, document.body.scrollHeight)}
+              >
                 Liên hệ
               </a>
             </Col>
@@ -70,16 +68,24 @@ const HomePage = () => {
         <Content>
           <Carousel autoplay dotPosition="top">
             <div>
-              <h3 style={contentStyle}><img className="carouselImg" src={slide1} fluid ></img></h3>
+              <h3 style={contentStyle}>
+                <img className="carouselImg" src={slide1} fluid></img>
+              </h3>
             </div>
             <div>
-              <h3 style={contentStyle}><img className="carouselImg" src={slide2} fluid ></img></h3>
+              <h3 style={contentStyle}>
+                <img className="carouselImg" src={slide2} fluid></img>
+              </h3>
             </div>
             <div>
-              <h3 style={contentStyle}><img className="carouselImg" src={slide3} fluid ></img></h3>
+              <h3 style={contentStyle}>
+                <img className="carouselImg" src={slide3} fluid></img>
+              </h3>
             </div>
             <div>
-              <h3 style={contentStyle}><img className="carouselImg" src={slide4} fluid ></img></h3>
+              <h3 style={contentStyle}>
+                <img className="carouselImg" src={slide4} fluid></img>
+              </h3>
             </div>
           </Carousel>
 
