@@ -31,6 +31,11 @@ const Story = () => {
             ngất đến tận cùng… <br />
             Bẵng đi vài thập kỷ, cái hương vị ấy chẳng biết đã đi về đâu, khiến
             con người ta cứ nhung nhớ khôn dường… <br />
+            <a href="/story">
+              <div style={{ color: "blue", display: "inline-block" }}>
+                Xem thêm....
+              </div>
+            </a>
           </Paragraph>
         </Col>
         <Col span={8}>

@@ -35,7 +35,7 @@ const Contact = () => {
             <Col span={2}>
               <PhoneSvg style={{ width: 30 }} />
             </Col>
-            <Col span={20}>
+            <Col span={20} style={{marginLeft: "1em"}}>
               <div>02835121164</div>
             </Col>
           </Row>
@@ -43,18 +43,12 @@ const Contact = () => {
             <Col span={2}>
               <EmailSvg style={{ width: 30 }} />
             </Col>
-            <Col span={20}>
+            <Col span={20} style={{marginLeft: "1em"}}>
               <div>ctycaphexua@gmail.com</div>
             </Col>
           </Row>
         </Col>
         <Col span={7}>
-          <Paragraph
-            className="contactContent"
-            style={{ paddingLeft: "2.2vw" }}
-          >
-            Về công ty
-          </Paragraph>
           <Button
             type="primary"
             icon={<FacebookFilled style={{ fontSize: 30 }} />}

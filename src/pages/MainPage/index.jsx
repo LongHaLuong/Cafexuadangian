@@ -45,7 +45,9 @@ const HomePage = () => {
               </a>
             </Col>
             <Col span="4">
-              <Image width={75} preview={false} className="logo" src={avatar} />
+              <a href="/"> 
+                <Image width={75} preview={false} className="logo" src={avatar} />
+              </a>
             </Col>
             <Col span="3">
               <a className="knowledge anchor" href="#knowledge">
