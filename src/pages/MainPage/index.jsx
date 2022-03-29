@@ -7,6 +7,7 @@ import Duty from "./components/Duty";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Knowledge from "./components/Knowlegde";
+import Homestay from "./components/Homestay";
 import { Link } from "react-router-dom";
 import avatar from "../../assets/avatar.png";
 import slide1 from "../../assets/Carousel_1.jpg";
@@ -40,8 +41,8 @@ const HomePage = () => {
               </a>
             </Col>
             <Col span="3">
-              <a className="garden anchor" href="#garden">
-                Khu vườn cà phê
+              <a className="homestay anchor" href="#homestay">
+                Homestay Dambri
               </a>
             </Col>
             <Col span="4">
@@ -98,6 +99,7 @@ const HomePage = () => {
           </div> */}
           <Duty id="duty" />
           {/* <Reviews id="reviews" /> */}
+          <Homestay id="homestay" />
           <div id="knowledge">
             <Knowledge />
           </div>

@@ -1,0 +1,15 @@
+#homestay {
+    margin-bottom: 2%;
+}
+
+.homestayCarousel {
+    height: 28rem !important;
+    padding-left: 30px;
+}
+.carouselImg {
+    height: 100%;
+}
+
+.homestayTitle {
+    font-size: 4ch !important;
+}
