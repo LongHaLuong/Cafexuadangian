@@ -1,9 +1,11 @@
-import { Layout, Image, Row, Col } from "antd";
+import { Layout, Image, Row, Col, Typography } from "antd";
 import "./style.css";
 import Contact from "../Contact";
 import { Link } from "react-router-dom";
 import avatar from "../../../../assets/avatar.png";
+import { RightCircleFilled } from "@ant-design/icons";
 
+const { Title, Paragraph } = Typography;
 const { Header, Content, Footer } = Layout;
 
 const HomePage = () => {
@@ -28,8 +30,13 @@ const HomePage = () => {
               </a>
             </Col>
             <Col span="4">
-              <a href="/"> 
-                <Image width={75} preview={false} className="logo" src={avatar} />
+              <a href="/">
+                <Image
+                  width={75}
+                  preview={false}
+                  className="logo"
+                  src={avatar}
+                />
               </a>
             </Col>
             <Col span="3">
@@ -51,7 +58,21 @@ const HomePage = () => {
           </Row>
         </Header>
         <Content>
-      
+          <Paragraph className="storyDetailed">
+            <Title className="storyTitle">HỆ THỐNG CÀ PHÊ XƯA DÂN GIAN</Title>
+            <Paragraph style={{ textAlign: "center"}}>
+              ______________________
+              <br />
+              <RightCircleFilled /> Văn phòng cà phê TP.HCM
+              <br />  
+              143A Ung Văn Khiêm, Phường 22, Quận Bình Thạnh, Thành Phố Hồ Chí Minh
+
+              <br />
+              <RightCircleFilled /> Nông trại cà phê Bảo Lộc & Homestay
+              <br />  
+              689 Lý Thái Tổ, Đam Bri, Thành Phố Bảo Lộc, Tỉnh Lâm Đồng
+            </Paragraph>
+          </Paragraph>
         </Content>
         <Footer>
           <Contact id="contact" />

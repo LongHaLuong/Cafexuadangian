@@ -13,12 +13,44 @@ const Knowledge = () => {
     <>
       <Row>
         <Col span={12} className="knowlegde-wrapper">
-          <div className="title_box_left" style={{marginLeft:"30px"}}>
+          <div className="title_box_left" style={{ marginLeft: "30px" }}>
             <Title level={4} className="title">
               Kiến thức Cà phê xưa
             </Title>
           </div>
           <div className="knowledge-card">
+            <Card>
+              <Row>
+                <Col span={7}>
+                  <a
+                    href="https://fb.watch/bY85fTZvO-/"
+                    target="_blank"
+                  > 
+                    <Image src={hoakenhong} preview={false} width="95%" />
+                  </a>
+                </Col>
+                <Col span={17}>
+                  <Row>
+                    <a
+                      href="https://fb.watch/bY85fTZvO-/"
+                      target="_blank"
+                    >
+                      <Title level={5}>
+                        …Tản Mạn một chút về Cà Phê Xưa Dân Gian cùng một bạn
+                        đường baloGO dễ thương tại Homestay Dambri
+                      </Title>
+                    </a>
+                  </Row>
+                  <Row>
+                    <div>
+                      Cùng một bạn đường vô cùng đáng yêu, thân thiện - baloGO
+                      cùng điểm lại những điều thú vị về những trải nghiệm tại Homestay
+                      Dambri và thưởng thức thương hiệu Cà Phê Xưa Dân Gian.
+                    </div>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
             <Card>
               <Row>
                 <Col span={7}>
@@ -131,7 +163,9 @@ const Knowledge = () => {
 
         <Col span={12}>
           <div className="video-wrapper">
-            <Title level={3} style={{marginTop:"20px"}}>Video Clip</Title>
+            <Title level={3} style={{ marginTop: "20px" }}>
+              Video Clip
+            </Title>
             <ReactPlayer
               className="videoplayer"
               url="https://www.youtube.com/watch?v=XJb5O2HMSlc"

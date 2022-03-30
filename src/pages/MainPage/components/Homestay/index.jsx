@@ -71,7 +71,9 @@ const Homestay = () => {
           <Col span={10}>
             <Row>
               <a href="https://www.facebook.com/dambrihomestay" target="_blank">
-                <Title className="homestayTitle" level={5}>Hãy đến với Homestay của chúng tôi</Title>
+                <Title className="homestayTitle" level={5}>
+                  Hãy đến với Homestay của chúng tôi
+                </Title>
               </a>
             </Row>
             <Row>
@@ -79,7 +81,17 @@ const Homestay = () => {
                 Homestay Dambri nằm cách thác Dambri 5 km, sở hữu không gian
                 thoáng mát hòa cùng không khí trong lành, yên bình của rừng
                 nguyên sinh sẽ giúp bạn có những ngày trải nghiệm đầy lý tưởng
-                khi đến nơi đây
+                khi đến nơi đây. <br /><br />
+                Tọa lạc tại một chân đồi Bảo Lộc, chúng tôi hân hạnh chào đón
+                các bạn đến với Homestay của chúng tôi và cùng đắm chìm vào
+                khung cảnh nên thơ, trữ tình trải dài đến tận thung lũng và nhấm
+                nháp ly cà phê thơm nồng, nguyên chất trong một buổi sáng tinh
+                mơ se lạnh. <br /><br />
+                Qua bao năm tháng thành lập và phát triển, chúng tôi luôn mong
+                muốn mang đến cho bạn những dịch vụ tốt nhất, chất lượng nhất
+                khi bạn đặt chân đến mảnh đất trong lành, mát mẻ của Bảo Lộc.
+                Hẹn gặp các bạn trong một chuyến du lịch đi tìm những hoài niệm xưa cũ! <br/><br />
+                HOMESTAY DAMBRI & CÀ PHÊ XƯA DÂN GIAN.
               </Paragraph>
             </Row>
           </Col>
