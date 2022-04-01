@@ -68,7 +68,7 @@ const HomePage = () => {
               143A Ung Văn Khiêm, Phường 22, Quận Bình Thạnh, Thành Phố Hồ Chí Minh
 
               <br />
-              <RightCircleFilled /> Nông trại cà phê Bảo Lộc & Homestay
+              <RightCircleFilled /> Nông trại cà phê Bảo Lộc và Homestay Dambri
               <br />  
               689 Lý Thái Tổ, Đam Bri, Thành Phố Bảo Lộc, Tỉnh Lâm Đồng
             </Paragraph>

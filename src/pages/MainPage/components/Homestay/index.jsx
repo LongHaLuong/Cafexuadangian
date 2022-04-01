@@ -91,7 +91,7 @@ const Homestay = () => {
                 muốn mang đến cho bạn những dịch vụ tốt nhất, chất lượng nhất
                 khi bạn đặt chân đến mảnh đất trong lành, mát mẻ của Bảo Lộc.
                 Hẹn gặp các bạn trong một chuyến du lịch đi tìm những hoài niệm xưa cũ! <br/><br />
-                HOMESTAY DAMBRI & CÀ PHÊ XƯA DÂN GIAN.
+                HOMESTAY DAMBRI VÀ CÀ PHÊ XƯA DÂN GIAN.
               </Paragraph>
             </Row>
           </Col>
