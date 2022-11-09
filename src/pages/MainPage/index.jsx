@@ -1,21 +1,23 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Layout, Image, Carousel, Row, Col } from "antd";
 import "./style.css";
-import Story from "./components/Story";
-import Traditional from "./components/Traditional";
-import Garden from "./components/Garden";
-import Duty from "./components/Duty";
-import Reviews from "./components/Reviews";
-import Contact from "./components/Contact";
-import Knowledge from "./components/Knowlegde";
-import Homestay from "./components/Homestay";
-import { Link } from "react-router-dom";
+import Story from "../../components/Story";
+import Traditional from "../../components/Traditional";
+import Garden from "../../components/Garden";
+import Duty from "../../components/Duty";
+import Reviews from "../../components/Reviews";
+import Contact from "../../components/Contact";
+import Knowledge from "../../components/Knowlegde";
+import Homestay from "../../components/Homestay";
 import avatar from "../../assets/avatar.png";
 import slide1 from "../../assets/Carousel_1.jpg";
 import slide2 from "../../assets/Carousel_2.jpg";
 import slide3 from "../../assets/Carousel_3.jpg";
 import slide4 from "../../assets/Carousel_4.jpg";
+import { Link } from "react-router-dom";
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer, Header } = Layout;
 const contentStyle = {
   height: "550px",
   color: "#fff",
@@ -36,22 +38,27 @@ const HomePage = () => {
               </a>
             </Col>
             <Col span="3">
-              <a className="traditional anchor" href="#traditional">
+              <a className="traditional anchor" href="/#traditional">
                 Cà phê xưa dân gian
               </a>
             </Col>
             <Col span="3">
-              <a className="homestay anchor" href="#homestay">
-                Homestay Dambri
+              <a className="garden anchor" href="/#garden">
+                Gốm sứ Vui Vẻ
               </a>
             </Col>
             <Col span="4">
-              <a href="/"> 
-                <Image width={75} preview={false} className="logo" src={avatar} />
+              <a href="/">
+                <Image
+                  width={75}
+                  preview={false}
+                  className="logo"
+                  src={avatar}
+                />
               </a>
             </Col>
             <Col span="3">
-              <a className="knowledge anchor" href="#knowledge">
+              <a className="knowledge anchor" href="/#knowledge">
                 Kiến thức cà phê
               </a>
             </Col>

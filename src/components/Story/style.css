@@ -1,0 +1,17 @@
+.img {
+  border-radius: 4px;
+  max-width: 600px;
+  max-height: 450px;
+  /* margin: 30px; */
+  margin-left: 2em;
+  width: 95%;
+  height: auto;
+}
+
+.title_box_left {
+  color: #260b0b !important;
+}
+
+.ant-typography {
+  font-size: medium !important;
+}

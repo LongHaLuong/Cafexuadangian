@@ -1,0 +1,14 @@
+.video-wrapper, .knowlegde-wrapper h3 {
+    text-align: center;
+}
+.video-wrapper .videoplayer {
+    margin: auto;
+}
+.knowlegde-wrapper .knowledge-card {
+    height: 360px;
+    overflow: auto !important;
+}
+
+.knowlegde-wrapper, .video-wrapper{
+    margin-bottom: 2%;
+}

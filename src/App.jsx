@@ -2,8 +2,9 @@ import Main from "./pages/MainPage";
 import "antd/dist/antd.css";
 import DocumentMeta from "react-document-meta";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import System from "./pages/MainPage/components/System";
-import Story from "./pages/MainPage/components/StoryDetailed";
+import System from "./pages/System";
+import Story from "./pages/Story";
+
 const meta = {
   title: "Cà phê xưa dân gian",
   description: "Trang web chính của thương hiệu Cà phê xưa dân gian",
